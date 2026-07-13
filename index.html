@@ -10,25 +10,6 @@
   <title>동우산삼 | 자연의 정성을 담다</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <style>
-    .account-nav{display:flex;align-items:center;gap:8px;margin-left:16px;position:relative;z-index:9999;pointer-events:auto}
-    .account-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 13px;border:1px solid #cfd9d2;border-radius:999px;background:#fff;color:#183b23;text-decoration:none;font-size:13px;font-weight:800;white-space:nowrap;cursor:pointer;pointer-events:auto}
-    .account-nav a:hover,.account-nav a:focus-visible{background:#eef5ef}
-    .account-nav .store-button{background:#183b23;border-color:#183b23;color:#fff;padding:0 17px}
-    .account-nav .store-button:hover,.account-nav .store-button:focus-visible{background:#0f2b18}
-    @media(max-width:1100px){
-      .nav-wrap{flex-wrap:wrap;height:auto;min-height:78px;padding-top:10px;padding-bottom:10px}
-      .account-nav{width:100%;justify-content:center;margin:10px 0 0;padding-top:10px;border-top:1px solid rgba(255,255,255,.18)}
-      .hero-image-section{margin-top:138px!important}
-    }
-    @media(max-width:600px){
-      .account-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
-      .account-nav .store-button{grid-column:1/-1}
-      .hero-image-section{margin-top:210px!important}
-    }
-  </style>
-
 </head>
 <body>
   <header class="site-header">
@@ -45,14 +26,7 @@
         <a href="#contact">문의</a>
         <a class="nav-cta" href="https://smartstore.naver.com/kfood_wild_ginseng" target="_blank" rel="noopener">스마트스토어</a>
       </nav>
-
-      <div class="account-nav" aria-label="회원 및 쇼핑 메뉴">
-        <a href="https://nid.naver.com/nidlogin.login">로그인</a>
-        <a href="https://nid.naver.com/user2/join/agree?lang=ko_KR">회원가입</a>
-        <a href="https://shopping.naver.com/cart">장바구니</a>
-        <a class="store-button" href="https://smartstore.naver.com/kfood_wild_ginseng">동우산삼 메뉴보기</a>
-      </div>
-    </div>
+</div>
   </header>
 
   <main id="top">
@@ -144,17 +118,5 @@
 
   <a class="floating-call" href="tel:01049243435" aria-label="전화 문의">☎</a>
   <script src="assets/js/script.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.account-nav a').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          event.preventDefault();
-          window.location.assign(link.href);
-        });
-      });
-    });
-  </script>
-
 </body>
 </html>
