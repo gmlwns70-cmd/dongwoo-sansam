@@ -1,0 +1,96 @@
+/* 동우산삼 회원·쇼핑 메뉴 활성화 패치 */
+.commerce-bar {
+  background: #0f3a23;
+  color: #fff;
+  font-size: 14px;
+}
+.commerce-bar-inner {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.commerce-bar p {
+  margin: 0;
+}
+.commerce-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.commerce-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-left: 1px solid rgba(255,255,255,.25);
+}
+.commerce-links a:hover,
+.commerce-links a:focus-visible {
+  background: rgba(255,255,255,.12);
+}
+.cart-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #fff;
+  color: #0f3a23;
+  font-size: 12px;
+  font-weight: 800;
+}
+.hero-image-section {
+  position: relative;
+}
+.hero-menu-button {
+  position: absolute;
+  left: clamp(22px, 6vw, 88px);
+  bottom: clamp(24px, 7vw, 92px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: #123d25;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(8,35,21,.25);
+  transition: transform .2s ease, background .2s ease;
+}
+.hero-menu-button:hover,
+.hero-menu-button:focus-visible {
+  background: #0a2c19;
+  transform: translateY(-2px);
+}
+@media (max-width: 760px) {
+  .commerce-bar-inner {
+    min-height: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .commerce-bar p {
+    font-size: 12px;
+  }
+  .commerce-links a {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  .hero-menu-button {
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100% - 36px);
+  }
+  .hero-menu-button:hover,
+  .hero-menu-button:focus-visible {
+    transform: translateX(-50%) translateY(-2px);
+  }
+}
