@@ -12,20 +12,18 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
-    .member-tools{display:flex;align-items:center;gap:4px;margin-left:auto}
-    .member-tools a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 10px;border-radius:999px;color:#214b32;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
-    .member-tools a:hover,.member-tools a:focus-visible{background:#eef5ef}
-    .member-tools .cart-link{border:1px solid #c9d8cc}
-    .member-tools .menu-link{background:#214b32;color:#fff;padding:0 15px}
-    .member-tools .menu-link:hover,.member-tools .menu-link:focus-visible{background:#153721}
-    @media(max-width:980px){
-      .member-tools{order:3;width:100%;justify-content:center;padding-top:10px;border-top:1px solid #e7ece8}
+    .account-nav{display:flex;align-items:center;gap:8px;margin-left:16px}
+    .account-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 12px;border:1px solid #cfd9d2;border-radius:999px;background:#fff;color:#183b23;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
+    .account-nav a:hover,.account-nav a:focus-visible{background:#eef5ef}
+    .account-nav .store-button{background:#183b23;border-color:#183b23;color:#fff;padding:0 16px}
+    .account-nav .store-button:hover,.account-nav .store-button:focus-visible{background:#0f2b18}
+    @media(max-width:1100px){
       .nav-wrap{flex-wrap:wrap}
+      .account-nav{width:100%;justify-content:center;margin:10px 0 0;padding-top:10px;border-top:1px solid #e6ece7}
     }
-    @media(max-width:560px){
-      .member-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
-      .member-tools a{border:1px solid #d9e4dc}
-      .member-tools .menu-link{grid-column:1/-1}
+    @media(max-width:600px){
+      .account-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+      .account-nav .store-button{grid-column:1/-1}
     }
   </style>
 
@@ -43,14 +41,14 @@
         <a href="#products">제품</a>
         <a href="#story">재배 이야기</a>
         <a href="#contact">문의</a>
-        <a class="nav-cta" href="https://smartstore.naver.com/kfood_wild_ginseng" target="_blank" rel="noopener">제품 구매</a>
+        <a class="nav-cta" href="https://smartstore.naver.com/kfood_wild_ginseng" target="_blank" rel="noopener">스마트스토어</a>
       </nav>
 
-      <div class="member-tools" aria-label="회원 및 쇼핑 메뉴">
-        <a href="https://nid.naver.com/nidlogin.login" target="_blank" rel="noopener">로그인</a>
-        <a href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=ko_KR" target="_blank" rel="noopener">회원가입</a>
-        <a class="cart-link" href="https://shopping.naver.com/cart" target="_blank" rel="noopener">장바구니</a>
-        <a class="menu-link" href="https://smartstore.naver.com/kfood_wild_ginseng" target="_blank" rel="noopener">동우산삼 메뉴보기</a>
+      <div class="account-nav" aria-label="회원 및 쇼핑 메뉴">
+        <a href="https://nid.naver.com/nidlogin.login" target="_blank" rel="noopener noreferrer">로그인</a>
+        <a href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=ko_KR" target="_blank" rel="noopener noreferrer">회원가입</a>
+        <a href="https://shopping.naver.com/cart" target="_blank" rel="noopener noreferrer">장바구니</a>
+        <a class="store-button" href="https://smartstore.naver.com/kfood_wild_ginseng" target="_blank" rel="noopener noreferrer">동우산삼 메뉴보기</a>
       </div>
     </div>
   </header>
